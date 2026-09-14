@@ -1,0 +1,6 @@
+---
+title: "About"
+description: "Daniel Yorke is a Vancouver data scientist with a Master of Data Science from UBC and five years of reporting work in employment services."
+---
+
+TODO: full bio — written after the home page is signed off.

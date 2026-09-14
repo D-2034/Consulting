@@ -1,0 +1,8 @@
+---
+title: "What a project looks like"
+description: "Illustrative sketches of typical analytics and AI consulting projects."
+---
+
+These are illustrative scenarios, not completed client projects.
+
+TODO: 3–4 draft sketches for owner approval.

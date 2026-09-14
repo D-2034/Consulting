@@ -1,0 +1,17 @@
+# Values reused across the site. Change them here and every page updates.
+# Use one in a page with:  {{< var email >}}
+
+email: dyorkeconsulting@gmail.com
+
+# Must match `site-url` in _quarto.yml (Quarto's config can't read this file).
+site-url: https://d-2034.github.io/Consulting/
+
+location: Vancouver, BC
+timezone: Pacific Time
+
+reply-time: I usually reply within two business days.
+
+# Not used in v1 — un-comment to use later.
+# phone: "+1 604 000 0000"
+# social:
+#   linkedin: https://www.linkedin.com/in/your-profile

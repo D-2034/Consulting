@@ -1,0 +1,107 @@
+---
+pagetitle: "Daniel Yorke Consulting — Analytics & AI consulting in Vancouver"
+description: "I help small businesses and busy professionals get more out of the information they already have. Book a free 20-minute consultation."
+image: assets/img/og-image.png
+---
+
+::: {.hero .fade-in}
+[Daniel Yorke]{.eyebrow}
+
+# I help small businesses and busy professionals get more out of the information they already have.
+
+::: {.lead}
+Sometimes that means dashboards and analysis. Sometimes it means AI doing the tedious first draft. And sometimes it starts further back — with recording something you've never written down.
+:::
+
+::: {.cta-row}
+[Book a free 20-minute consultation](contact.qmd){.btn .btn-primary}
+[See what I do →](services.qmd){.text-link-arrow}
+:::
+:::
+
+::: {.data-graphic}
+![](assets/img/scatter-to-order.svg){fig-alt="" width="960" height="200"}
+:::
+
+::: {.section}
+## The problem, briefly
+
+Most small businesses don't have a data problem so much as a time problem. The numbers are spread across bank statements, inboxes, a spreadsheet one person understands, and the owner's memory — and pulling them together is nobody's job. AI tools stall for the same reason: they're easy to try, and hard to fit into how the work actually gets done.
+:::
+
+::: {.section}
+## What I do
+
+::: {.cards}
+::: {.card-plain}
+### Analytics & data
+
+Getting your numbers into one place, kept current automatically, and shown in a dashboard you own. We start wherever you are — including nothing written down yet.
+
+[Analytics & data solutions →](services.qmd#analytics)
+:::
+
+::: {.card-plain}
+### 1:1 AI consulting
+
+Working through your actual week, one session at a time, to find where AI saves real effort — and where it shouldn't be trusted. Personal and professional.
+
+[1:1 AI consulting →](services.qmd#ai-consulting)
+:::
+:::
+:::
+
+::: {.section}
+## How it works
+
+1. [Free 20-minute call]{.fw-bold} — tell me what you're dealing with. You'll get a straight answer about whether it's worth pursuing.
+2. [A scoped proposal with a fixed price]{.fw-bold} — what I'll build, what it costs, and what you'll have at the end.
+3. [Build, handover, and training]{.fw-bold} — so you can run it yourself, without depending on me.
+{.steps}
+:::
+
+<!--
+SOCIAL PROOF — omitted for v1. Add real testimonials here when available.
+Never use placeholder quotes or client logos.
+
+::: {.section}
+## What clients say
+
+> "Quote here." — Name, Role, Business
+:::
+-->
+
+::: {.section}
+## About me
+
+I'm a data scientist with a Master of Data Science from UBC and five years spent producing reports and outcome data for an employment services program — for people who needed answers, not analysis. I work with small businesses and individuals who have useful information trapped somewhere inconvenient.
+
+[More about me →](about.qmd)
+:::
+
+::: {.closing}
+## Start with a free 20-minute call
+
+Twenty minutes, no obligation. You'll leave knowing whether this is worth doing — and if it isn't, I'll say so. Email me to set up a time:
+
+[[{{< var email >}}](mailto:{{< var email >}})]{.email-display}
+
+[Book a free 20-minute consultation](contact.qmd){.btn .btn-primary}
+:::
+
+```{=html}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Daniel Yorke Consulting",
+  "founder": { "@type": "Person", "name": "Daniel Yorke" },
+  "url": "https://d-2034.github.io/Consulting/",
+  "email": "mailto:dyorkeconsulting@gmail.com",
+  "image": "https://d-2034.github.io/Consulting/assets/img/og-image.png",
+  "description": "Analytics, data solutions, and 1:1 AI consulting for small businesses and busy professionals.",
+  "areaServed": "Remote, and Vancouver, BC",
+  "address": { "@type": "PostalAddress", "addressLocality": "Vancouver", "addressRegion": "BC", "addressCountry": "CA" }
+}
+</script>
+```

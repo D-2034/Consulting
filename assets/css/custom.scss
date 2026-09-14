@@ -1,0 +1,200 @@
+/*-- scss:defaults --*/
+
+// =====================================================================
+//  COLOURS & FONTS — change the look of the whole site here.
+// =====================================================================
+
+// The one accent colour (links, buttons, small rules).
+// Changing this single line re-colours both light and dark mode.
+$accent: #0E6B69;
+
+// Light mode
+$paper-light: #FAFAF7;   // page background
+$ink-light:   #1C2024;   // main text
+$muted-light: #545B62;   // secondary text
+$rule-light:  #E3E3DC;   // hairlines and card borders
+
+// Dark mode
+$paper-dark:  #15181B;
+$ink-dark:    #E4E4DF;
+$muted-dark:  #A5ACB2;
+$rule-dark:   #2C3136;
+
+// Fonts
+$font-heading: "Fraunces", Georgia, "Times New Roman", serif;
+$font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+// =====================================================================
+//  Derived values — no need to edit below this line.
+// =====================================================================
+
+$is-dark: false !default;   // set to true by dark.scss
+
+$paper: if($is-dark, $paper-dark, $paper-light);
+$ink:   if($is-dark, $ink-dark,   $ink-light);
+$muted: if($is-dark, $muted-dark, $muted-light);
+$rule:  if($is-dark, $rule-dark,  $rule-light);
+// In dark mode the accent is lightened so it stays readable.
+$accent-ui: if($is-dark, mix($accent, #ffffff, 40%), $accent);
+$on-accent: if($is-dark, $paper-dark, #ffffff);
+
+// Bootstrap / Quarto variables
+$body-bg: $paper;
+$body-color: $ink;
+$primary: $accent-ui;
+$link-color: $accent-ui;
+$link-decoration: underline;
+$link-underline-offset: .18em;
+$font-family-sans-serif: $font-body;
+$headings-font-family: $font-heading;
+$headings-font-weight: 600;
+$headings-color: $ink;
+$font-size-root: 17px;
+$line-height-base: 1.65;
+$navbar-bg: $paper;
+$navbar-fg: $ink;
+$navbar-hl: $accent-ui;
+$footer-bg: $paper;
+$footer-fg: $muted;
+$border-color: $rule;
+$btn-border-radius: .375rem;
+$btn-font-weight: 600;
+$enable-shadows: false;
+$enable-gradients: false;
+
+
+/*-- scss:rules --*/
+
+// ---------- Base typography ----------
+body { -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, .navbar-brand .navbar-title {
+  font-family: $font-heading;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.12; }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.2; margin-top: 2.5rem; border-bottom: none; }
+h3 { font-size: 1.25rem; margin-top: 1.75rem; }
+
+// Keep lines comfortably short (~70 characters).
+main.content { max-width: 44rem; }
+.page-columns main.content { max-width: none; }
+p, li { max-width: 68ch; }
+
+a { text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+
+.lead { font-size: 1.2rem; color: $muted; }
+.muted { color: $muted; }
+
+// ---------- Visible focus for keyboard users ----------
+a:focus-visible, .btn:focus-visible, .nav-link:focus-visible,
+.navbar-toggler:focus-visible, button:focus-visible {
+  outline: 3px solid $accent-ui;
+  outline-offset: 3px;
+  box-shadow: none;
+  border-radius: 2px;
+}
+
+// ---------- Navbar ----------
+.navbar {
+  border-bottom: 1px solid $rule;
+  .navbar-title { font-weight: 600; font-size: 1.2rem; }
+  .nav-link { color: $ink; }
+  .nav-link.active { color: $accent-ui; }
+}
+// The "Get in touch" item on the right is drawn as a button.
+.navbar-nav.ms-auto .nav-link[href$="contact.html"] {
+  background: $accent-ui;
+  color: $on-accent;
+  border-radius: $btn-border-radius;
+  padding: .35rem .9rem;
+  margin-left: .5rem;
+  font-weight: 600;
+  &:hover, &.active { color: $on-accent; filter: brightness(1.08); }
+}
+@media (max-width: 767.98px) {
+  .navbar-nav.ms-auto .nav-link[href$="contact.html"] {
+    display: inline-block;
+    margin: .5rem 0 .75rem;
+  }
+}
+
+// ---------- Buttons ----------
+.btn-primary {
+  --bs-btn-color: #{$on-accent};
+  --bs-btn-hover-color: #{$on-accent};
+  --bs-btn-active-color: #{$on-accent};
+  --bs-btn-bg: #{$accent-ui};
+  --bs-btn-border-color: #{$accent-ui};
+  --bs-btn-hover-bg: #{darken($accent-ui, 6%)};
+  --bs-btn-hover-border-color: #{darken($accent-ui, 6%)};
+  --bs-btn-active-bg: #{darken($accent-ui, 10%)};
+  padding: .7rem 1.25rem;
+  text-decoration: none;
+}
+.cta-row {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem;
+  margin-top: 2rem;
+}
+.text-link-arrow { font-weight: 600; }
+
+// ---------- Home page sections ----------
+.hero { padding-block: clamp(2.5rem, 8vw, 5.5rem) 1.5rem; }
+.hero h1 { margin-bottom: 1.25rem; max-width: 20ch; }
+.hero .eyebrow {
+  font-size: .9rem; letter-spacing: .08em; text-transform: uppercase;
+  color: $muted; margin-bottom: 1rem;
+}
+
+.section { padding-block: 2rem; }
+.section-rule { border: 0; border-top: 2px solid $accent-ui; width: 3rem; opacity: 1; margin: 3rem 0 0; }
+
+.data-graphic { margin: 1rem 0 0; }
+.data-graphic img { width: 100%; height: auto; }
+
+.cards {
+  display: grid; gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  margin-top: 1.5rem;
+}
+.card-plain {
+  border: 1px solid $rule; border-radius: .5rem; padding: 1.5rem;
+  h3 { margin-top: 0; }
+  p { margin-bottom: .75rem; }
+}
+
+.steps {
+  list-style: none; padding: 0; margin: 1.5rem 0 0;
+  display: grid; gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  counter-reset: step;
+  li { counter-increment: step; border-top: 1px solid $rule; padding-top: 1rem; }
+  li::before {
+    content: counter(step);
+    display: block; font-family: $font-heading; font-size: 1.6rem;
+    color: $accent-ui; line-height: 1; margin-bottom: .5rem;
+  }
+  strong { display: block; margin-bottom: .25rem; }
+}
+
+.closing {
+  margin-top: 3rem; padding: 2rem; border: 1px solid $rule; border-radius: .5rem;
+  h2 { margin-top: 0; }
+  .email-display { font-size: 1.2rem; font-weight: 600; word-break: break-all; }
+}
+
+// ---------- Portrait (About page) ----------
+.portrait img {
+  width: 100%; max-width: 15rem; height: auto;
+  border-radius: .5rem; display: block;
+}
+
+// ---------- Footer ----------
+.nav-footer { border-top: 1px solid $rule; font-size: .9rem; }
+
+// ---------- Gentle fade-in (skipped if reduced motion is preferred) ----------
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in { animation: fade-up .6s ease-out both; }
+  @keyframes fade-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+}

@@ -1,0 +1,12 @@
+---
+title: "Services"
+description: "Analytics & data solutions for small businesses, and 1:1 AI consulting for individuals and teams."
+---
+
+## Analytics & data solutions {#analytics}
+
+TODO: section copy — written after the home page is signed off.
+
+## 1:1 AI consulting {#ai-consulting}
+
+TODO: section copy — written after the home page is signed off.

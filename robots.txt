@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /Consulting/blog/
+Allow: /
+
+Sitemap: https://d-2034.github.io/Consulting/sitemap.xml
