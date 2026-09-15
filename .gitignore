@@ -1,0 +1,12 @@
+website-build-brief.md
+
+# Quarto build output — never committed
+/_site/
+/.quarto/
+**/*.quarto_ipynb
+
+# Original camera files (processed copies live in assets/img/)
+/img/
+
+# Python
+__pycache__/

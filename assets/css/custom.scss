@@ -133,10 +133,11 @@ a:focus-visible, .btn:focus-visible, .nav-link:focus-visible,
   padding: .7rem 1.25rem;
   text-decoration: none;
 }
-.cta-row {
+.cta-row, .cta-row > p {
   display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem;
   margin-top: 2rem;
 }
+.cta-row > p { margin: 0; }
 .text-link-arrow { font-weight: 600; }
 
 // ---------- Home page sections ----------
@@ -164,7 +165,7 @@ a:focus-visible, .btn:focus-visible, .nav-link:focus-visible,
   p { margin-bottom: .75rem; }
 }
 
-.steps {
+.steps ol {
   list-style: none; padding: 0; margin: 1.5rem 0 0;
   display: grid; gap: 1.25rem;
   grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));

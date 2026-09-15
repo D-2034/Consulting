@@ -4,7 +4,7 @@ description: "I help small businesses and busy professionals get more out of the
 image: assets/img/og-image.png
 ---
 
-::: {.hero .fade-in}
+::: {.hero}
 [Daniel Yorke]{.eyebrow}
 
 # I help small businesses and busy professionals get more out of the information they already have.
@@ -54,10 +54,11 @@ Working through your actual week, one session at a time, to find where AI saves 
 ::: {.section}
 ## How it works
 
+::: {.steps}
 1. [Free 20-minute call]{.fw-bold} — tell me what you're dealing with. You'll get a straight answer about whether it's worth pursuing.
 2. [A scoped proposal with a fixed price]{.fw-bold} — what I'll build, what it costs, and what you'll have at the end.
 3. [Build, handover, and training]{.fw-bold} — so you can run it yourself, without depending on me.
-{.steps}
+:::
 :::
 
 <!--

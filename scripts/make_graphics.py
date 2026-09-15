@@ -21,29 +21,25 @@ PAPER = "#FAFAF7"
 INK = "#1C2024"
 
 
-def scatter_to_order(w=960, h=200, n=90, seed=7):
+def scatter_to_order(w=960, h=200, seed=7):
     rng = random.Random(seed)
-    cols = 18
-    # Target grid: columns of increasing height, like a tidy bar chart of dots.
-    heights = [max(1, round(2 + 4 * (1 - math.cos(i / (cols - 1) * math.pi)) / 2 + rng.uniform(-1, 1))) for i in range(cols)]
-    targets = []
-    for c, hgt in enumerate(heights):
-        for r in range(hgt):
-            targets.append((c, r))
-    targets = targets[:n]
-    n = len(targets)
-    rng.shuffle(targets)
+    cols, gap, r_dot = 32, 18, 4.5
+    step = (w - 20) / (cols - 1)
     circles = []
-    for i, (c, r) in enumerate(targets):
-        t = i / (n - 1)                      # 0 = messy, 1 = ordered
-        x_mess, y_mess = rng.uniform(10, w - 10), rng.uniform(12, h - 12)
-        x_ord = w * 0.55 + c * (w * 0.43 / cols)
-        y_ord = h - 14 - r * 18
-        x = x_mess * (1 - t) + x_ord * t
-        y = y_mess * (1 - t) + y_ord * t
-        colour = ACCENT if t > 0.55 else NEUTRAL
-        opacity = 0.45 + 0.55 * t
-        circles.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.5" fill="{colour}" fill-opacity="{opacity:.2f}"/>')
+    for c in range(cols):
+        t = c / (cols - 1)                   # 0 = messy (left), 1 = ordered (right)
+        ease = t * t * (3 - 2 * t)           # smoothstep
+        # Ordered state: a gently rising "bar chart" of stacked dots.
+        height = 2 + round(6 * (1 - math.cos(t * math.pi)) / 2)
+        for row in range(height):
+            x_ord, y_ord = 10 + c * step, h - 12 - row * gap
+            x_mess = x_ord + rng.uniform(-step * 1.5, step * 1.5)
+            y_mess = rng.uniform(12, h - 12)
+            x = x_mess * (1 - ease) + x_ord * ease
+            y = y_mess * (1 - ease) + y_ord * ease
+            colour = ACCENT if t > 0.5 else NEUTRAL
+            opacity = 0.5 + 0.5 * ease
+            circles.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r_dot}" fill="{colour}" fill-opacity="{opacity:.2f}"/>')
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" '
            f'role="presentation" aria-hidden="true">' + "".join(circles) + "</svg>\n")
     (OUT / "scatter-to-order.svg").write_text(svg, encoding="utf-8")
