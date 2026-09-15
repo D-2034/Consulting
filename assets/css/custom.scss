@@ -57,6 +57,7 @@ $navbar-hl: $accent-ui;
 $footer-bg: $paper;
 $footer-fg: $muted;
 $border-color: $rule;
+$code-color: $ink;
 $btn-border-radius: .375rem;
 $btn-font-weight: 600;
 $enable-shadows: false;
@@ -182,14 +183,42 @@ a:focus-visible, .btn:focus-visible, .nav-link:focus-visible,
 .closing {
   margin-top: 3rem; padding: 2rem; border: 1px solid $rule; border-radius: .5rem;
   h2 { margin-top: 0; }
-  .email-display { font-size: 1.2rem; font-weight: 600; word-break: break-all; }
+  .email-display { font-size: clamp(1rem, 4.4vw, 1.2rem); font-weight: 600; overflow-wrap: anywhere; }
+}
+@media (max-width: 575.98px) {
+  .closing { padding: 1.25rem; }
+  .portrait img { max-width: 10rem; }
 }
 
-// ---------- Portrait (About page) ----------
+// ---------- About page ----------
+.about-grid {
+  display: grid; gap: 2rem;
+  grid-template-columns: minmax(0, 14rem) minmax(0, 1fr);
+  align-items: start;
+}
+@media (max-width: 640px) {
+  .about-grid { grid-template-columns: minmax(0, 1fr); }
+}
 .portrait img {
-  width: 100%; max-width: 15rem; height: auto;
+  width: 100%; max-width: 14rem; height: auto;
   border-radius: .5rem; display: block;
 }
+.bio .btn { margin-top: 1rem; }
+
+// ---------- Small notes and placeholders ----------
+.note-plain {
+  border-left: 3px solid $accent-ui; padding: .5rem 0 .5rem 1rem;
+  margin-bottom: 2rem; color: $muted;
+  p { margin: 0; }
+}
+// Visible marker for content the owner still needs to supply.
+.todo {
+  display: inline-block; padding: .1rem .4rem; border-radius: .25rem;
+  background: rgba(200, 120, 0, .15); font-size: .9rem;
+}
+
+// Section buttons (end of each service section)
+main .btn-primary { margin-top: .5rem; }
 
 // ---------- Footer ----------
 .nav-footer { border-top: 1px solid $rule; font-size: .9rem; }

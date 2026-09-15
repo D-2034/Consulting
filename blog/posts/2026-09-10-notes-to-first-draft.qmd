@@ -1,0 +1,41 @@
+---
+title: "From a stack of notes to a first draft"
+date: 2026-09-10
+description: "A walkthrough of using AI to turn rough notes into a structured first draft — and where the human has to stay in charge."
+---
+
+SAMPLE POST — replace before launching the blog. This post exists to check that headings, code, and figures display properly.
+
+## The problem
+
+Plenty of people write the same kind of document over and over: an inspection report, an assessment, a site summary. The information is in their notes. The hard part is the blank page.
+
+## A simple approach
+
+1. Type up or photograph your notes.
+2. Give an AI tool your usual report template and ask it to fill in a draft from the notes.
+3. Read every line. Correct what's wrong. Add what only you know.
+
+### Keeping the template consistent
+
+If your notes are already in a spreadsheet, a few lines of code can turn each row into a prompt:
+
+```python
+import csv
+
+with open("site_notes.csv", newline="") as f:
+    for row in csv.DictReader(f):
+        prompt = (
+            f"Draft the 'Findings' section for {row['site']} "
+            f"using these notes:\n{row['notes']}"
+        )
+        print(prompt)
+```
+
+## From scattered to structured
+
+![Scattered points settling into order — roughly what a good first draft does to a pile of notes.](../../assets/img/scatter-to-order.svg){fig-alt="A row of dots, scattered on the left and neatly arranged in columns on the right."}
+
+## Where to stop
+
+The draft is a starting point. You are still the one who knows what you saw on site, and you're still the one signing the report.

@@ -1,0 +1,5 @@
+# Settings for everything in blog/.
+# The blog is hidden for v1. To launch it, delete the `include-in-header`
+# lines below (and see README.md, "Turning on the blog").
+include-in-header:
+  text: '<meta name="robots" content="noindex, nofollow">'

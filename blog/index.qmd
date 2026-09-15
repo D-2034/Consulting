@@ -1,0 +1,11 @@
+---
+title: "Notes"
+description: "Short notes on data, reporting, and practical AI for small businesses and busy professionals."
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  fields: [date, title, description]
+  feed: true
+  date-format: long
+---

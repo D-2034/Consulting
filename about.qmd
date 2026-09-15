@@ -1,6 +1,31 @@
 ---
 title: "About"
 description: "Daniel Yorke is a Vancouver data scientist with a Master of Data Science from UBC and five years of reporting work in employment services."
+image: assets/img/daniel-yorke.jpg
 ---
 
-TODO: full bio — written after the home page is signed off.
+::: {.about-grid}
+::: {.portrait}
+```{=html}
+<picture>
+  <source srcset="assets/img/daniel-yorke.webp" type="image/webp">
+  <img src="assets/img/daniel-yorke.jpg" width="640" height="800"
+       alt="Daniel Yorke, smiling, in a blue collared shirt against a soft grey background.">
+</picture>
+```
+:::
+
+::: {.bio}
+I'm a data scientist with a Master of Data Science from UBC.
+
+Before that, I spent five years in government-contracted employment services, running data collection, reporting, and quality assurance on the caseload and outcome numbers that program and operations decisions were built on.
+
+That job is most of the reason I work the way I do. The people relying on those reports weren't analysts — they were case managers and program leads with a full day already behind them. If something wasn't clear, it didn't get used. I got good at building things people would actually open.
+
+On the technical side, that's Python, R, SQL, statistical inference, machine learning, and designing AI workflows that fit how someone already works rather than asking them to change everything. On the practical side, it means I'm comfortable starting from a clean database, a messy spreadsheet, a pile of handwritten notes, or nothing recorded at all.
+
+I'm based in Vancouver, BC, and work with clients remotely.
+
+[Book a free 20-minute consultation](contact.qmd){.btn .btn-primary}
+:::
+:::

@@ -2,14 +2,15 @@
 
 Every placeholder still on the site, and what's needed to replace it.
 
-| Where | What's missing | Needed from |
+| Where | What's needed | From |
 |---|---|---|
-| `services.qmd` | Full Analytics and AI consulting sections | Agent draft → owner approval |
-| `examples.qmd` | 3–4 illustrative sketches | Agent draft → owner approval |
-| `about.qmd` | Full bio page with portrait | Agent (bio text is owner-supplied) |
-| `about.qmd` | Name the former employment-services employer, or keep generic? | Owner |
+| `services.qmd` — "How sessions work" | Typical session length and cadence (shown on the page as a highlighted TODO) | Owner |
+| `examples.qmd` | Approve, edit, or replace the four drafted sketches | Owner |
+| `services.qmd` | Review the drafted copy for both sections | Owner |
+| `about.qmd` | Name the former employment-services employer, or keep it generic (currently generic) | Owner |
 | `about.qmd` | Optional closing line of genuine personality | Owner |
-| `contact.qmd` | Full contact page | Agent |
-| `blog/` | Listing page and two sample posts (hidden at launch) | Agent |
+| `contact.qmd` | Confirm "remote" is the only way you meet clients, or add in-person | Owner |
+| `blog/posts/` | Replace the two sample posts before launching the blog | Owner |
 | `index.qmd` | Testimonials section (commented out until real quotes exist) | Owner, later |
 | `_quarto.yml` | Footer year is typed as 2026 — update each January | Owner |
+| Custom domain | Optional: register e.g. `danielyorke.ca` (see README) | Owner, later |

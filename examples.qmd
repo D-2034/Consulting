@@ -1,8 +1,44 @@
 ---
 title: "What a project looks like"
-description: "Illustrative sketches of typical analytics and AI consulting projects."
+description: "Illustrative sketches of typical analytics, data, and AI consulting projects — what the situation looks like, what I'd build, and what changes."
 ---
 
-These are illustrative scenarios, not completed client projects.
+::: {.note-plain}
+These are illustrative scenarios, not completed client projects. They show the kind of work I do and how it usually unfolds.
+:::
 
-TODO: 3–4 draft sketches for owner approval.
+## A shop with no single view of its margin
+
+**Typical situation.** A small online shop takes orders through its store platform, pays for ads on several different sites, and tracks costs in a spreadsheet. Each piece makes sense on its own. But nobody can say, week to week, which products actually make money once ad spend and shipping are counted.
+
+**What I'd build.** A connection to each of those sources that refreshes on its own, and one dashboard showing sales, costs, and margin by product and by week.
+
+**What changes for you.** You open one page instead of four. Decisions about what to promote and what to drop are made on the numbers, not on a hunch assembled from three browser tabs.
+
+## A service business that runs on memory
+
+**Typical situation.** A trades or cleaning business schedules jobs by phone and text, invoices from a template, and knows its regular customers by heart. Nothing is recorded in a way that could answer "how many jobs did we do last spring?" or "which customers haven't booked in a while?"
+
+**What I'd build.** Something deliberately simple: a quick way to log each job as it's booked — a short form on a phone — feeding a tidy spreadsheet, and a monthly summary that builds itself.
+
+**What changes for you.** For the first time, the business has a record. After a few months, the questions you've always wondered about have answers — and you haven't taken on any new software to learn.
+
+## A seasonal business ordering stock by feel
+
+**Typical situation.** A shop with a busy season orders stock based on last year's gut feeling. Some lines run out early; others sit in the back room until they're marked down. Sales history exists in the till system but is never looked at.
+
+**What I'd build.** A cleaned-up view of past sales, then a straightforward forecast of demand by product for the coming season, with a clear sense of how uncertain each estimate is.
+
+**What changes for you.** Ordering starts from a sensible number you can adjust with what you know, rather than from nothing. You can see which calls are safe and which are a gamble.
+
+## A professional buried in report writing
+
+**Typical situation.** An inspector, assessor, or consultant spends the day on site taking handwritten notes, then spends the evening turning them into a formal report in a fixed template. The writing is the bottleneck, and it's the part they like least.
+
+**What I'd build.** A working routine, set up in tools they already have access to, that takes their notes — typed, photographed, or dictated on the drive back — and produces a structured first draft in their own template. Then a few sessions practising how to check and correct it quickly.
+
+**What changes for you.** You start from a draft instead of a blank page. You still read every line, fix what's wrong, and sign your name to it — but the evening goes back to being yours.
+
+---
+
+Recognize your own situation — or something close to it? [Book a free 20-minute consultation](contact.qmd) and we'll talk it through.

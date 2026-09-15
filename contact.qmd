@@ -1,8 +1,32 @@
 ---
 title: "Book a free 20-minute consultation"
-description: "Email Daniel Yorke to book a free, no-obligation 20-minute consultation."
+description: "Email Daniel Yorke to book a free, no-obligation 20-minute call about your data or AI questions. Vancouver, BC — available remotely."
 ---
 
-Email: [{{< var email >}}](mailto:{{< var email >}})
+Twenty minutes, free, and no obligation. Tell me what you're dealing with and I'll give you a straight answer about whether it's worth pursuing — and if it isn't, I'll say so. That's a useful answer too.
 
-TODO: full contact page — written after the home page is signed off.
+## Email me to set up a time
+
+::: {.closing}
+[[{{< var email >}}](mailto:{{< var email >}})]{.email-display}
+
+A sentence or two about what you're working on is plenty to start.
+
+[{{< var reply-time >}}]{.muted}
+:::
+
+<!--
+PHONE — not shown in v1. To add: set `phone` in _variables.yml, then un-comment:
+
+Phone: [{{{< var phone >}}}](tel:{{{< var phone >}}})
+(remove the extra outer braces when you un-comment this line)
+-->
+
+<!--
+FORM — not built in v1. If a form is added later, put it here,
+alongside the email address above (not replacing it).
+-->
+
+## Where I am
+
+{{< var location >}} ({{< var timezone >}}). I work with clients remotely, so you don't need to be local.

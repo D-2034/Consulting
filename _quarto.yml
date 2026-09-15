@@ -4,9 +4,13 @@ project:
   render:
     - "*.qmd"
     - "blog/**/*.qmd"
+  # Keeps the hidden blog out of sitemap.xml. Delete this line when the blog launches.
+  post-render: scripts/hide_blog.py
   resources:
     - robots.txt
     - .nojekyll
+    - assets/img/daniel-yorke.jpg
+    - assets/img/daniel-yorke.webp
 
 website:
   title: "Daniel Yorke Consulting"

@@ -1,12 +1,75 @@
 ---
 title: "Services"
-description: "Analytics & data solutions for small businesses, and 1:1 AI consulting for individuals and teams."
+description: "Analytics and data work for small businesses, and 1:1 AI consulting for people who want to know what AI can realistically do for them."
 ---
+
+I offer two kinds of work. They often overlap — a conversation about AI turns into a conversation about the information a business keeps, and the other way round.
+
+[Analytics & data solutions](#analytics) · [1:1 AI consulting](#ai-consulting)
 
 ## Analytics & data solutions {#analytics}
 
-TODO: section copy — written after the home page is signed off.
+Most small businesses I talk to are at one of two starting points.
+
+Some run on instinct and memory. Not much is written down, and the business works because the owner carries it in their head. Others record plenty — but by hand, into spreadsheets, and get very little back for the effort.
+
+Neither is behind. They've been busy running a business.
+
+### Start at the bottom rung
+
+The first project often isn't a model or a dashboard. It's "let's start recording this at all," or "let's stop typing the same thing in twice." That work is usually quick, it pays off straight away, and it makes everything after it possible. If that's where you are, that's where we start.
+
+### What I build
+
+- **Dashboards and reporting.** A live dashboard you own and can open any time — not a PDF that's out of date by the time it arrives. It shows the handful of numbers you actually make decisions with.
+- **Charts and one-off analysis.** Sometimes there's one question: which customers come back, which months are slow, whether a price change worked. I'll answer it and show the answer plainly.
+- **Getting your data in one place, automatically.** Pulling from the tools you already use — your till, your accounting software, your booking system, your spreadsheets — and keeping it current without anyone retyping it.
+- **Forecasting and modelling**, described by what it's for: how much stock to order for next season, which customers are drifting away, how to set prices, and which groups of customers behave differently.
+
+### You might need this if…
+
+- You couldn't say what your best month last year was without going through bank statements.
+- You know which products do well the way you know the weather — by feel, and usually after the fact.
+- The same numbers get typed in twice, into two different places.
+- One person owns the spreadsheet, and when they're away nobody touches it.
+- There are seven versions of the file, and the real one has `FINAL` in the name.
+
+Every project is different — get in touch to discuss pricing.
+
+[Book a free 20-minute consultation](contact.qmd){.btn .btn-primary}
 
 ## 1:1 AI consulting {#ai-consulting}
 
-TODO: section copy — written after the home page is signed off.
+This is for people who are curious about AI but not convinced. Maybe you've tried a chatbot once or twice and weren't sure what to make of it. You don't need a roundup of the latest tools. You want to know whether any of this applies to *your* actual day.
+
+### How sessions work
+
+Sessions are one-on-one. You bring something real from your week — a report you're dreading, a pile of emails, a document you need to understand. We work on it together, using tools you can keep using afterwards. You leave with something done, and a way of doing it again without me.
+
+[TODO: typical session length and how often people usually meet.]{.todo}
+
+We look at both personal and professional work. Plenty of people start with something from home — a confusing letter, a week of meal planning — and then see where the same approach fits their job.
+
+I'm not tied to any AI company. The advice is about the tools you already have access to and the work already on your desk.
+
+### What this looks like in practice
+
+**From site-visit notes to a first draft.** Say you write long reports from handwritten notes taken on site. AI is good at turning those notes — typed up, photographed, or spoken aloud — into a structured first draft in your own report template. You then correct it, sharpen it, and sign it. The judgment stays yours; the blank page goes away.
+
+**Asking a long document questions.** Contracts, regulations, policy manuals. Instead of reading eighty pages to find the cancellation terms, you ask the document directly — then check the passage it points you to.
+
+**Making sense of a dense letter.** Something from an insurer, a lender, or a government agency that you've read three times and still aren't sure about. AI can explain it in plain language and help you work out what, if anything, you need to do.
+
+### What not to automate
+
+Knowing where to stop matters as much as knowing where to start. I'll tell you plainly when something shouldn't be handed to AI:
+
+- Anything you carry professional or legal responsibility for, unless you check every word.
+- Final judgment calls, especially about people.
+- Confidential or client-identifying information in tools that aren't set up to handle it.
+- Tasks where checking the output carefully would take longer than doing it yourself.
+- Anything you'd be uncomfortable explaining to the person it affects.
+
+Every engagement is different — get in touch to discuss pricing.
+
+[Book a free 20-minute consultation](contact.qmd){.btn .btn-primary}
