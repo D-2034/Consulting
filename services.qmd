@@ -46,8 +46,6 @@ This is for people who are curious about AI but not convinced. Maybe you've trie
 
 Sessions are one-on-one, either remotely or in person in the Vancouver area. You bring something real from your week — a report you're dreading, a pile of emails, a document you need to understand. We work on it together, using tools you can keep using afterwards. You leave with something done, and a way of doing it again without me.
 
-[TODO: typical session length and how often people usually meet.]{.todo}
-
 We look at both personal and professional work. Plenty of people start with something from home — a confusing letter, a week of meal planning — and then see where the same approach fits their job.
 
 I'm not tied to any AI company. The advice is about the tools you already have access to and the work already on your desk.
