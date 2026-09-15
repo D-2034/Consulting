@@ -44,7 +44,7 @@ This is for people who are curious about AI but not convinced. Maybe you've trie
 
 ### How sessions work
 
-Sessions are one-on-one. You bring something real from your week — a report you're dreading, a pile of emails, a document you need to understand. We work on it together, using tools you can keep using afterwards. You leave with something done, and a way of doing it again without me.
+Sessions are one-on-one, either remotely or in person in the Vancouver area. You bring something real from your week — a report you're dreading, a pile of emails, a document you need to understand. We work on it together, using tools you can keep using afterwards. You leave with something done, and a way of doing it again without me.
 
 [TODO: typical session length and how often people usually meet.]{.todo}
 

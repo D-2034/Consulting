@@ -9,7 +9,6 @@ Every placeholder still on the site, and what's needed to replace it.
 | `services.qmd` | Review the drafted copy for both sections | Owner |
 | `about.qmd` | Name the former employment-services employer, or keep it generic (currently generic) | Owner |
 | `about.qmd` | Optional closing line of genuine personality | Owner |
-| `contact.qmd` | Confirm "remote" is the only way you meet clients, or add in-person | Owner |
 | `blog/posts/` | Replace the two sample posts before launching the blog | Owner |
 | `index.qmd` | Testimonials section (commented out until real quotes exist) | Owner, later |
 | `_quarto.yml` | Footer year is typed as 2026 — update each January | Owner |

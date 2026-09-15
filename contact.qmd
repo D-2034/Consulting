@@ -1,6 +1,6 @@
 ---
 title: "Book a free 20-minute consultation"
-description: "Email Daniel Yorke to book a free, no-obligation 20-minute call about your data or AI questions. Vancouver, BC — available remotely."
+description: "Email Daniel Yorke to book a free, no-obligation 20-minute call about your data or AI questions. Vancouver, BC — meet remotely or in person."
 ---
 
 Twenty minutes, free, and no obligation. Tell me what you're dealing with and I'll give you a straight answer about whether it's worth pursuing — and if it isn't, I'll say so. That's a useful answer too.
@@ -29,4 +29,4 @@ alongside the email address above (not replacing it).
 
 ## Where I am
 
-{{< var location >}} ({{< var timezone >}}). I work with clients remotely, so you don't need to be local.
+{{< var location >}} ({{< var timezone >}}). We can meet remotely, or in person anywhere in the Vancouver area — whichever suits you.

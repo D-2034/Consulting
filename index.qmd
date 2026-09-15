@@ -101,7 +101,7 @@ Twenty minutes, no obligation. You'll leave knowing whether this is worth doing 
   "email": "mailto:dyorkeconsulting@gmail.com",
   "image": "https://d-2034.github.io/Consulting/assets/img/og-image.png",
   "description": "Analytics, data solutions, and 1:1 AI consulting for small businesses and busy professionals.",
-  "areaServed": "Remote, and Vancouver, BC",
+  "areaServed": "Vancouver, BC (in person) and remote",
   "address": { "@type": "PostalAddress", "addressLocality": "Vancouver", "addressRegion": "BC", "addressCountry": "CA" }
 }
 </script>
