@@ -42,11 +42,11 @@ Getting your numbers into one place, kept current automatically, and shown in a 
 :::
 
 ::: {.card-plain}
-### 1:1 AI consulting
+### AI consulting: 1:1 and for teams
 
-Working through your actual week, one session at a time, to find where AI saves real effort — and where it shouldn't be trusted. Personal and professional.
+Working through your actual week, one session at a time, to find where AI saves real effort — and where it shouldn't be trusted. Personal and professional. For companies, the same approach, rolled out team by team.
 
-[1:1 AI consulting →](services.qmd#ai-consulting)
+[AI consulting →](services.qmd#ai-consulting)
 :::
 :::
 :::
@@ -100,7 +100,7 @@ Twenty minutes, no obligation. You'll leave knowing whether this is worth doing 
   "url": "https://d-2034.github.io/Consulting/",
   "email": "mailto:dyorkeconsulting@gmail.com",
   "image": "https://d-2034.github.io/Consulting/assets/img/og-image.png",
-  "description": "Analytics, data solutions, and 1:1 AI consulting for small businesses and busy professionals.",
+  "description": "Analytics, data solutions, and AI consulting (one-on-one and for teams) for small businesses and busy professionals.",
   "areaServed": "Vancouver, BC (in person) and remote",
   "address": { "@type": "PostalAddress", "addressLocality": "Vancouver", "addressRegion": "BC", "addressCountry": "CA" }
 }

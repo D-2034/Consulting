@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Embedded in services.qmd (#ai-consulting) via an iframe. Not meant to be indexed on its own. -->
+<meta name="robots" content="noindex">
+<title>AI Adoption Plan · Daniel Yorke, M.Sc</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>:root{--bg:#0d0f12;--bg2:#14171c;--card:#181c22;--line:#2a3039;--ink:#e9e6df;--muted:#9aa1ab;--dim:#6b727c;
+--amber:#e3a857;--amber-soft:rgba(227,168,87,.14);--teal:#5fc4b0;--teal-soft:rgba(95,196,176,.13);--r:14px}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;overflow:hidden}
+button{font:inherit;color:inherit}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.brandmark{display:flex;align-items:center;gap:10px}
+.logo{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,var(--amber),#b97a2e);color:#1a1209;font-family:Fraunces,serif;font-weight:700;font-size:15px;flex:none}
+.brandmark b{display:block;font-family:Fraunces,serif;font-size:16px;font-weight:600;line-height:1.1}
+.brandmark span{color:var(--muted);font-size:12px}
+.btn{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;color:var(--ink);font-size:13px;transition:.2s;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{border-color:#3d4550}
+.btn.primary{background:var(--amber);border-color:var(--amber);color:#1a1209;font-weight:600}
+.btn:focus-visible,.focusable:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+/* slide content */
+.sb{container-type:inline-size;width:100%}
+.sb .k{color:var(--amber)} .sb .k.t{color:var(--teal)}
+.sb h1{font-family:Fraunces,serif;font-weight:600;font-size:52px;line-height:1.04;margin:12px 0 16px;letter-spacing:-.01em}
+.sb h1 em{font-style:normal;color:var(--amber)}
+.sb h2{font-family:Fraunces,serif;font-weight:600;font-size:34px;line-height:1.1;margin:8px 0 12px}
+.sb .lede{color:var(--muted);font-size:17px;margin:0;max-width:680px}
+.sb .q{font-size:17px;margin:0 0 14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.grid2{display:grid;grid-template-columns:1.35fr 1fr;gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+.card .mono{color:var(--dim)} .card p{margin:6px 0 0;font-size:14.5px}
+.card h3{font-size:15px;font-weight:600;margin:6px 0}
+.card.wy .mono{color:var(--teal)} .card.wy p{color:var(--muted);font-size:13.5px}
+.list{margin:0;padding:0;list-style:none}
+.list li{position:relative;padding:7px 0 7px 20px;border-top:1px solid var(--line);color:#cfd3d8;font-size:14.5px}
+.list li:first-child{border-top:none}
+.list li::before{content:"";position:absolute;left:2px;top:15px;width:7px;height:7px;border-radius:2px;background:var(--amber)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+.box .mono{color:var(--muted);font-size:11px;margin-bottom:4px} .box p{margin:0;font-size:14px;color:#cfd3d8}
+.box.t{border-color:rgba(95,196,176,.35);background:var(--teal-soft)} .box.t .mono{color:var(--teal)}
+.steps{display:flex;gap:6px;margin:4px 0 2px}
+.steps span{flex:1;height:5px;border-radius:3px;background:var(--line)} .steps span.on{background:var(--amber)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.col{border:1px solid var(--line);border-radius:var(--r);padding:18px;background:var(--card)}
+.col.us{border-color:rgba(227,168,87,.45);background:linear-gradient(180deg,var(--amber-soft),var(--card) 60%)}
+.col h3{font-family:Fraunces,serif;font-size:20px;font-weight:600;margin:2px 0 8px}
+.row{display:flex;gap:10px;padding:7px 0;border-top:1px solid var(--line);font-size:14px;color:#cfd3d8}
+.row:first-of-type{border-top:none}
+.row i{flex:none;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:11px;margin-top:2px}
+.x i{background:rgba(255,120,120,.12);color:#ff9a9a} .ok i{background:var(--amber-soft);color:var(--amber)}
+.lanes{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:20px}
+.lane{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.lane .mono{color:var(--dim);font-size:10.5px} .lane b{display:block;margin:4px 0 10px;font-size:14px;font-weight:600;min-height:40px}
+.lane .bar{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}.lane .bar span{height:5px;border-radius:3px;background:var(--line)}
+.lane.on{border-color:var(--teal)} .lane.on .bar span{background:var(--teal)}
+.lane .st{margin-top:8px;font-size:11.5px;color:var(--dim)} .lane.on .st{color:var(--teal)}
+.contact{margin-top:20px;display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+.contact a{color:var(--amber);text-decoration:none}
+.ctabox{border:1px solid var(--line);border-radius:18px;padding:28px;background:linear-gradient(120deg,rgba(227,168,87,.12),rgba(95,196,176,.08))}
+@container (max-width:720px){
+  .sb h1{font-size:36px}.sb h2{font-size:27px}
+  .grid3,.grid2,.cmp{grid-template-columns:1fr}.lanes{grid-template-columns:1fr 1fr}
+}
+.treewrap{margin:18px 0 6px;background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:14px 10px 4px}
+.tree{width:100%;height:auto;display:block}
+.tl{fill:none;stroke:#3a414b;stroke-width:1.4}
+.tn{fill:var(--card);stroke:var(--line);stroke-width:1.2;transition:.3s}.tn.root{stroke:rgba(227,168,87,.5)}
+.tn.dn{stroke:rgba(95,196,176,.55)}.tn.cur{stroke:var(--teal);stroke-width:2;fill:rgba(95,196,176,.1)}
+.tt{fill:var(--ink);font:600 14px Inter,sans-serif;text-anchor:middle}.tt.sm{font-size:12.5px;font-weight:500}
+.pp{stroke:#0d0f12;stroke-width:2;transition:fill .4s}
+.arr{fill:#0d0f12;font:700 13px Inter,sans-serif;text-anchor:middle}
+.tag2{fill:var(--teal);font:500 11.5px Inter,sans-serif;text-anchor:middle}
+.legend2{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}.legend2 i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.note{color:var(--dim);font-size:12.5px;margin:8px 0 0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pill{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;transition:.2s}
+.pill:hover{color:var(--ink)}.pill[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#0e1412;font-weight:600}
+
+body{background:radial-gradient(900px 700px at 25% 55%,rgba(227,168,87,.07),transparent 65%),var(--bg)}
+header{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:16px 22px;z-index:4}
+.demo{color:var(--dim)}
+.layout{position:fixed;inset:70px 0 0;display:grid;grid-template-columns:minmax(380px,44%) 1fr}
+#orbit{position:relative}
+#orbit svg{position:absolute;inset:0;width:100%;height:100%}
+.ring{fill:none;stroke:var(--line);stroke-width:1.2}
+.ring.in{stroke:rgba(227,168,87,.35);stroke-dasharray:5 7}
+.spoke{stroke:rgba(154,161,171,.16);stroke-width:1}
+.beam{stroke:url(#bg);stroke-width:2.5}
+.hub{position:absolute;transform:translate(-50%,-50%);width:118px;height:118px;border-radius:50%;display:grid;place-items:center;text-align:center;
+ background:radial-gradient(circle at 35% 30%,#2a2416,#14171c 70%);border:1px solid rgba(227,168,87,.45);box-shadow:0 0 80px rgba(227,168,87,.15)}
+.hub .logo{margin:0 auto 6px;width:42px;height:42px;font-size:18px}
+.hub span{font-size:11px;color:var(--muted);line-height:1.2;display:block}
+.node{position:absolute;transform:translate(-50%,-50%);border-radius:50%;display:grid;place-items:center;text-align:center;cursor:pointer;
+ background:radial-gradient(circle at 35% 30%,#232831,#15181d);border:1px solid var(--line);color:var(--ink);padding:6px;transition:border-color .25s,box-shadow .25s,width .3s,height .3s}
+.node:hover{border-color:#4a525d}
+.node .n{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--dim)}
+.node b{display:block;font-family:Fraunces,serif;font-weight:600;font-size:15px;line-height:1.1}
+.node.stage{background:radial-gradient(circle at 35% 30%,rgba(227,168,87,.2),#15181d 70%);border-color:rgba(227,168,87,.35)}
+.node.stage b{font-size:17px}
+.node.cur{border-color:var(--amber);box-shadow:0 0 0 7px var(--amber-soft),0 0 50px rgba(227,168,87,.3)}
+.node.cur .n{color:var(--amber)}
+#panel{position:relative;overflow:auto;padding:30px 48px 110px 36px;display:flex}
+#content{width:100%;max-width:820px;margin:auto 0;transition:opacity .35s,transform .45s cubic-bezier(.2,.8,.2,1)}
+#content.out{opacity:0;transform:translateX(24px)}
+.nav{position:fixed;right:28px;bottom:22px;display:flex;gap:8px;align-items:center;z-index:4}
+.nav .where{color:var(--muted);font-size:13px;margin-right:6px}
+.legend{position:absolute;left:22px;bottom:22px;color:var(--dim);font-size:12px;line-height:1.7}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr);grid-template-rows:46vh minmax(0,1fr)}#panel{min-width:0}#panel{padding:10px 20px 100px}.legend{display:none}}
+.kith{color:var(--teal);margin:18px 0 8px}
+.kit{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.kc{background:var(--card);border:1px solid var(--line);border-left:2px solid var(--amber);border-radius:10px;padding:9px 11px}
+.kc b{display:block;font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:500;color:var(--amber);margin-bottom:3px}
+.kc span{display:block;font-size:12.5px;line-height:1.35;color:#cfd3d8}
+@container (max-width:720px){.kit{grid-template-columns:1fr 1fr}}
+</style></head><body>
+<header><div class="brandmark"><div class="logo">DY</div><div><b>Daniel Yorke, M.Sc</b><span>Data Science · AI Workflow &amp; Adoption Consulting</span></div></div></header>
+<div class="layout"><div id="orbit"><svg id="osvg"><defs><linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#e3a857" stop-opacity=".9"/><stop offset="1" stop-color="#e3a857" stop-opacity="0"/></linearGradient></defs><g id="og"></g></svg>
+<div class="hub"><div><div class="logo">DY</div><span>Team-by-team<br>AI adoption</span></div></div>
+<div class="legend"><div><i style="background:rgba(227,168,87,.5)"></i>Inner orbit: the five-stage method</div><div><i style="background:#2a3039"></i>Outer orbit: start, rollout, next step</div><div style="margin-top:6px;color:#545b65">Daniel Yorke, M.Sc · AI workflow design &amp; coaching</div></div></div>
+<div id="panel"><div id="content"></div></div></div>
+<div class="nav"><span class="where" id="where"></span><button class="btn" id="prev">←</button><button class="btn primary" id="next">→</button></div>
+<script>const EMAIL='dyorkeconsulting@gmail.com',SITE='https://d-2034.github.io/Consulting/';
+const SLIDES=[
+ {id:'start',label:'Starting point',kind:'start'},
+ {id:'audit',label:'Audit',kind:'stage',n:0},
+ {id:'develop',label:'Develop',kind:'stage',n:1},
+ {id:'train',label:'Train',kind:'stage',n:2},
+ {id:'deploy',label:'Deploy',kind:'stage',n:3},
+ {id:'report',label:'Report',kind:'stage',n:4},
+ {id:'rollout',label:'Rollout',kind:'rollout'},
+ {id:'pilot',label:'Next step',kind:'pilot'}
+];
+const STAGES=[
+ {name:"Audit",q:"Where does the team's time go, and what's holding back AI adoption?",
+  items:["Spend time with the team to understand their current workflow, task by task","Find the barriers to adopting AI in their work, such as distrust of AI output, perfectionism or the learning curve","Define the tasks where AI can help most","Set a baseline for each task (e.g., time spent, quality of the product)"],
+  out:"A map of the team's workflow and AI skill, the target tasks, and a baseline to measure against.",you:"Team lead time for a kickoff, plus short conversations with each team member."},
+ {name:"Develop",q:"What does a good AI-assisted version of these tasks look like?",
+  items:["Create personalized AI-assisted workflows for the target tasks","Build mainly on the AI subscriptions the company already has, such as Claude","Test each workflow on real past work and fix where the AI breaks"],
+  out:"Tested workflows with prompts, instructions and a one-page quick reference.",you:"A team member to try early versions and give honest feedback.",
+  kit:[["Skill files","Packaged instructions that teach the AI to do a team task the company's way, every time"],
+   ["MCP servers","Connect the AI to internal documents and systems so it works from real reference material"],
+   ["System prompts","Tuned instructions for each workflow, tested against alternatives"],
+   ["Tool calling","The AI decides when to search, look things up or run a step itself"],
+   ["RAG","Assistants that answer from the company's own manuals, specs and past work"],
+   ["LLM evaluation","Measure accuracy and hallucinations on real past work before staff rely on it"],
+   ["Claude Projects / custom GPTs","Shared team spaces with documents and instructions preloaded"],
+   ["Spec-driven task documents","Written requirements and tasks the AI follows, so results are repeatable"]]},
+ {name:"Train",q:"Can every person run the workflow on their own?",
+  items:["Walk the staff through each workflow step by step","Address pain points and gaps in knowledge as they come up","Practise on real work, not toy examples","Teach the judgment: when to trust AI output, when to check it, and how to guard against hallucinations"],
+  out:"Staff who have each used the workflow on their own work.",you:"Protected time on calendars for short coaching sessions."},
+ {name:"Deploy",q:"Is it working in day-to-day use?",
+  items:["Staff use the workflow in their regular work","Follow up within one week (or sooner) to fine-tune and troubleshoot","Compare results to the audit baseline: time and quality","Adjust the workflow based on what the comparison shows"],
+  out:"Workflows in daily use, with before-and-after results.",you:"A short follow-up session with the team."},
+ {name:"Report",q:"What did it achieve, and what comes next?",
+  items:["Summarize the audit, workflows, training and results in a short report","Show the before-and-after comparison in plain language with clear numbers","Note what worked, what didn't, and lessons for the next team","Recommend whether and where to roll out next"],
+  out:"A short report for management.",you:"A review meeting to decide on the next team."}
+];
+// Illustrative org: L/M/H AI skill per person
+const ORG=[
+ {name:["Operations"],p:"LLML"},
+ {name:["Engineering"],p:"MLLH"},
+ {name:["Sales","& Marketing"],p:"HMLM"},
+ {name:["Finance"],p:"MLHL"},
+ {name:["Customer","Service"],p:"LMLL"}
+];
+const COL={L:'#e07a5f',M:'#e3a857',H:'#5fc4b0'};
+const up=c=>c==='L'?'M':'H';
+function tree(done,id){ // done = number of teams through the loop (in ORG order)
+ const W=840,dx=W/ORG.length;let s=`<svg viewBox="0 0 ${W} 330" class="tree" role="img" aria-label="Company tree coloured by AI skill">`;
+ const rx=W/2,ry=34;
+ ORG.forEach((d,i)=>{const x=dx*i+dx/2;s+=`<path d="M${rx},${ry+18} V92 H${x} V122" class="tl"/>`;
+  [...d.p].forEach((c,k)=>{const px=x+(k-1.5)*34;s+=`<path d="M${x},${170} V200 H${px} V246" class="tl"/>`})});
+ s+=`<rect x="${rx-78}" y="${ry-18}" width="156" height="36" rx="18" class="tn root"/><text x="${rx}" y="${ry+5}" class="tt">Leadership</text>`;
+ ORG.forEach((d,i)=>{const x=dx*i+dx/2,on=i<done,cur=i===done-1;
+  s+=`<rect x="${x-74}" y="122" width="148" height="48" rx="12" class="tn ${on?'dn':''} ${cur?'cur':''}"/>`;
+  s+=d.name.length>1?`<text x="${x}" y="142" class="tt sm">${d.name[0]}</text><text x="${x}" y="158" class="tt sm">${d.name[1]}</text>`:`<text x="${x}" y="151" class="tt sm">${d.name[0]}</text>`;
+  [...d.p].forEach((c,k)=>{const px=x+(k-1.5)*34,cc=on?up(c):c,champ=on&&k===[...d.p].indexOf(c==='H'?'H':c)&&false;
+   s+=`<circle cx="${px}" cy="260" r="13" fill="${COL[cc]}" fill-opacity="${on?1:.85}" class="pp"/>`;
+   if(on&&cc!==c)s+=`<text x="${px}" y="265" class="arr">↑</text>`;});
+  if(on)s+=`<text x="${x}" y="300" class="tag2">✓ through the loop</text>`;});
+ return s+'</svg>';}
+const legend=`<div class="legend2"><span><i style="background:${COL.L}"></i>Lower AI skill</span><span><i style="background:${COL.M}"></i>Medium</span><span><i style="background:${COL.H}"></i>High</span></div>`;
+let ROLL=1;
+function setRoll(n){ROLL=n;const el=document.getElementById('rolltree');if(el)el.innerHTML=tree(n);
+ document.querySelectorAll('.pill').forEach((p,i)=>p.setAttribute('aria-pressed',i===n-1));}
+function renderSlide(s){
+ if(s.kind==='start') return `<div class="sb"><div class="mono k">AI adoption plan · Daniel Yorke, M.Sc</div>
+  <h2>Start with where AI skill sits today</h2>
+  <p class="lede">Every team has a mix of people who are fluent with AI, people who use it now and then, and people who barely touch it. The plan meets each person where they are.</p>
+  <div class="treewrap">${tree(0)}</div>${legend}
+  <p class="note">Illustrative. The Audit stage replaces this with a real map of each team.</p></div>`;
+ if(s.kind==='stage'){const st=STAGES[s.n];return `<div class="sb"><div class="mono k">Stage 0${s.n+1} of 05</div>
+  <div class="steps">${[0,1,2,3,4].map(i=>`<span class="${i<=s.n?'on':''}"></span>`).join('')}</div>
+  <h2>${st.name}</h2><p class="q">${st.q}</p>
+  <div class="grid2"><ul class="list">${st.items.map(x=>`<li>${x}</li>`).join('')}</ul>
+  <div><div class="box t"><div class="mono">What you get</div><p>${st.out}</p></div><div class="box"><div class="mono">What I need from you</div><p>${st.you}</p></div></div></div>${st.kit?`<div class="kith mono">Develop toolkit</div><div class="kit">${st.kit.map(([a,b])=>`<div class="kc"><b>${a}</b><span>${b}</span></div>`).join("")}</div>`:""}</div>`;}
+ if(s.kind==='rollout') return `<div class="sb"><div class="mono k t">The rollout</div><h2>Then repeat, team by team</h2>
+  <p class="lede">Each team runs the full loop: Audit, Develop, Train, Deploy, Report. Lessons from one team make the next one faster. Pick a step to see skill rise across the company.</p>
+  <div class="pills">${ORG.map((d,i)=>`<button class="pill" aria-pressed="${i===ROLL-1}" onclick="setRoll(${i+1})">${i===0?'Pilot: ':''}${d.name.join(' ')}</button>`).join('')}</div>
+  <div class="treewrap" id="rolltree">${tree(ROLL)}</div>${legend}
+  <p class="note">Illustrative team order. The pilot team is chosen together at the start.</p></div>`;
+ if(s.kind==='pilot') return `<div class="sb"><div class="ctabox"><div class="mono k">Suggested first step</div><h2>One team. One audit. One workflow.</h2>
+  <p class="lede">A small pilot lets you judge the results before committing to anything larger. A 20-minute conversation is enough to pick the right team to start with.</p>
+  <div class="contact"><a href="mailto:${EMAIL}" target="_top">${EMAIL}</a><a href="${SITE}contact.html" target="_top">Get in touch</a></div></div></div>`;
+}
+
+const orbit=document.getElementById('orbit'),og=document.getElementById('og'),hub=orbit.querySelector('.hub'),content=document.getElementById('content');
+// inner ring = stages (90° apart), outer ring = other topics (60° apart)
+const ANG={audit:180,develop:252,train:324,deploy:36,report:108, start:144,rollout:288,pilot:0};
+const nodes={};let cur=0,rot=0,rotT=0;
+SLIDES.forEach((s,i)=>{const b=document.createElement('button');b.className='node'+(s.kind==='stage'?' stage':'');
+ b.innerHTML=`<div><div class="n">${String(i+1).padStart(2,'0')}</div><b>${s.label}</b></div>`;b.onclick=()=>go(i);b.setAttribute('aria-label',s.label);orbit.appendChild(b);nodes[s.id]=b});
+function geom(){const r=orbit.getBoundingClientRect();const cx=r.width*.5,cy=r.height*.5,R=Math.min(r.width,r.height)*.43;return{cx,cy,rIn:R*.5,rOut:R*.92,R}}
+function draw(){const{cx,cy,rIn,rOut,R}=geom();hub.style.left=cx+'px';hub.style.top=cy+'px';
+ let svg=`<circle class="ring" cx="${cx}" cy="${cy}" r="${rOut}"/><circle class="ring in" cx="${cx}" cy="${cy}" r="${rIn}"/>`;
+ SLIDES.forEach((s,i)=>{const inner=s.kind==='stage';const a=(ANG[s.id]+rot)*Math.PI/180;const r=inner?rIn:rOut;
+  const x=cx+r*Math.cos(a),y=cy+r*Math.sin(a);const n=nodes[s.id];const sz=(inner?R*.36:R*.32)*(i===cur?1.12:1);
+  n.style.left=x+'px';n.style.top=y+'px';n.style.width=n.style.height=Math.max(70,Math.min(sz,inner?130:118))+'px';n.classList.toggle('cur',i===cur);
+  if(inner)svg+=`<line class="spoke" x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"/>`;
+  if(i===cur)svg+=`<line class="beam" x1="${x}" y1="${y}" x2="${orbit.getBoundingClientRect().width+40}" y2="${y}"/>`;});
+ og.innerHTML=svg}
+function animate(){const d=rotT-rot;if(Math.abs(d)>.05){rot+=d*.12;draw();requestAnimationFrame(animate)}else{rot=rotT;draw()}}
+let go;go=function(i){cur=(i+SLIDES.length)%SLIDES.length;const s=SLIDES[cur];
+ // rotate so the chosen node sits at 3 o'clock, pointing at the panel; take the shortest way round
+ let want=-ANG[s.id];let d=((want-rotT)%360+540)%360-180;rotT+=d;requestAnimationFrame(animate);
+ content.classList.add('out');setTimeout(()=>{content.innerHTML=renderSlide(s);content.classList.remove('out');document.getElementById('panel').scrollTop=0},230);
+ document.getElementById('where').textContent=`${cur+1} / ${SLIDES.length} · ${s.label}`}
+document.getElementById('next').onclick=()=>go(cur+1);document.getElementById('prev').onclick=()=>go(cur-1);
+addEventListener('keydown',e=>{if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key)){e.preventDefault();go(cur+1)}
+ if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key)){e.preventDefault();go(cur-1)}});
+function fromHash(){const h=(location.hash||'').slice(1);const i=SLIDES.findIndex(x=>x.id===h);return i<0?0:i}
+const _go=go;go=function(i){_go(i);try{const id=SLIDES[cur].id;if(location.hash.slice(1)!==id)history.replaceState(null,'','#'+id)}catch(e){}};
+addEventListener('hashchange',()=>{const i=fromHash();if(i!==cur)_go(i)});
+addEventListener('resize',draw);_go(fromHash());
+</script></body></html>

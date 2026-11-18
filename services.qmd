@@ -1,11 +1,11 @@
 ---
 title: "Services"
-description: "Analytics and data work for small businesses, and 1:1 AI consulting for people who want to know what AI can realistically do for them."
+description: "Analytics and data work for small businesses, and AI consulting, one-on-one or for whole teams, for people who want to know what AI can realistically do for them."
 ---
 
 I offer two kinds of work. They often overlap — a conversation about AI turns into a conversation about the information a business keeps, and the other way round.
 
-[Analytics & data solutions](#analytics) · [1:1 AI consulting](#ai-consulting)
+[Analytics & data solutions](#analytics) · [AI consulting: 1:1 and teams](#ai-consulting)
 
 ## Analytics & data solutions {#analytics}
 
@@ -38,7 +38,7 @@ Every project is different — get in touch to discuss pricing.
 
 [Book a free 20-minute consultation](contact.qmd){.btn .btn-primary}
 
-## 1:1 AI consulting {#ai-consulting}
+## AI consulting: 1:1 and for teams {#ai-consulting}
 
 This is for people who are curious about AI but not convinced. Maybe you've tried a chatbot once or twice and weren't sure what to make of it. You don't need a roundup of the latest tools. You want to know whether any of this applies to *your* actual day.
 
@@ -57,6 +57,14 @@ I'm not tied to any AI company. The advice is about the tools you already have a
 **Asking a long document questions.** Contracts, regulations, policy manuals. Instead of reading eighty pages to find the cancellation terms, you ask the document directly — then check the passage it points you to.
 
 **Making sense of a dense letter.** Something from an insurer, a lender, or a government agency that you've read three times and still aren't sure about. AI can explain it in plain language and help you work out what, if anything, you need to do.
+
+### For teams and companies
+
+When a whole team wants to adopt AI, I work through it one team at a time. Each team goes through five stages: Audit, Develop, Train, Deploy and Report. We start with one pilot team, so you can judge the results before going further. Click through the plan below, or use the arrow keys once you've clicked inside it.
+
+::: {.column-screen-inset .adoption-embed}
+<iframe src="assets/embeds/ai-adoption-plan.html" title="AI adoption plan: an interactive walkthrough of the five-stage, team-by-team method" loading="lazy"></iframe>
+:::
 
 ### What not to automate
 

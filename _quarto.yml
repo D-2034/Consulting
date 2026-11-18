@@ -11,13 +11,14 @@ project:
     - .nojekyll
     - assets/img/daniel-yorke.jpg
     - assets/img/daniel-yorke.webp
+    - assets/embeds/ai-adoption-plan.html
 
 website:
   title: "Daniel Yorke Consulting"
   # The public address of the site. If you move to a custom domain,
   # change this line AND `site-url` in _variables.yml.
   site-url: "https://d-2034.github.io/Consulting/"
-  description: "Analytics, data, and 1:1 AI consulting for small businesses and busy professionals. Vancouver, BC."
+  description: "Analytics, data, and AI consulting (one-on-one and for teams) for small businesses and busy professionals. Vancouver, BC."
   favicon: assets/img/favicon.svg
   image: assets/img/og-image.png
   open-graph: true
